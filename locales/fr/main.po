@@ -1,0 +1,44 @@
+# Language: Français
+# Module: clock - 1.4.1
+# Date: 2018-02-20 13:34:16
+# Translated with translater 2018.02.14
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: clock 1.4.1\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-02-20T13:34:16+00:00\n"
+"Last-Translator: brol\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: _widgets.php:31
+msgid "Clock"
+msgstr "Horloge"
+
+#: _widgets.php:33
+msgid "Display the date of a time zone"
+msgstr "Afficher la date d'un fuseau horaire"
+
+#: _widgets.php:36
+msgid "Local time in %s"
+msgstr "Heure de %s"
+
+#: _widgets.php:43
+msgid "Format (see <a href=\"%1$s\" %2$s>PHP strftime function</a>) (HMS display dynamically %%H:%%M:%%S)<br />(on Microsoft Windows servers, you have to use %%d instead of %%e):"
+msgstr "Format (voir la <a href=\"%1$s\" %2$s>fonction strftime de PHP</a>) (HMS affiche dynamiquement %%H:%%M:%%S)<br />(sur les serveurs Microsoft Windows, il faut utiliser %%d à la place %%e)&nbsp;:"
+
+#: _widgets.php:44
+msgid "http://www.php.net/manual/en/function.strftime.php"
+msgstr "http://www.php.net/manual/fr/function.strftime.php"
+
+#: _widgets.php:45
+msgid "Are you sure you want to leave this page?"
+msgstr "Êtes-vous sûr de vouloir quitter la page&nbsp;?"
+
+msgid "Display the date of a time zone with the strftime() format in a widget"
+msgstr "Affichez la date d'un fuseau horaire avec le format strftime() dans un widget"
+
