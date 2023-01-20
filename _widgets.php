@@ -1,32 +1,24 @@
 <?php
-# ***** BEGIN LICENSE BLOCK *****
-#
-# This file is part of Clock, a plugin for Dotclear 2
-# Copyright (C) 2007-2018 Moe (http://gniark.net/)
-#
-# Clock is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License v2.0
-# as published by the Free Software Foundation.
-#
-# Clock is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; If not, see <http://www.gnu.org/licenses/>.
-#
-# ***** END LICENSE BLOCK *****
+/**
+ * @brief Clock, a plugin for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Plugins
+ *
+ * @author Moe, Pierre Van Glabeke and contributors
+ *
+ * @copyright GPL-2.0 https://www.gnu.org/licenses/gpl-2.0.html
+ */
 if (!defined('DC_RC_PATH')) { return; }
 
-$core->addBehavior('initWidgets',array('ClockBehaviors','initWidgets'));
+dcCore::app()->addBehavior('initWidgets',array('ClockBehaviors','initWidgets'));
 
 class ClockBehaviors
 {
 	public static function initWidgets($w)
 	{
 		# set timezone
-		$tz = $GLOBALS['core']->blog->settings->system->blog_timezone;
+		$tz = dcCore::app()->blog->settings->system->blog_timezone;
 
 		$w->create('Clock',__('Clock'),array('publicClock','Show'),
 			null,
@@ -62,13 +54,11 @@ class publicClock
 {
 	public static function Show($w)
 	{
-	global $core;
-
 		if ($w->offline)
 			return;
 
-		if (($w->homeonly == 1 && $core->url->type != 'default') ||
-			($w->homeonly == 2 && $core->url->type == 'default')) {
+		if (($w->homeonly == 1 && dcCore::app()->url->type != 'default') ||
+			($w->homeonly == 2 && dcCore::app()->url->type == 'default')) {
 			return;
 		}
 
@@ -80,7 +70,7 @@ class publicClock
 			$id = str_replace('/','',strtolower($w->timezone));
 
 			$js = (string)'';
-			$js .= '<script type="text/javascript">';
+			$js .= '<script>';
 			/* http://binnyva.blogspot.com/2005/12/my-custom-javascript-functions.html */
 			if (!defined('CLOCK_GEBI'))
 			{

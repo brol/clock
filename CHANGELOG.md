@@ -1,3 +1,6 @@
+v1.5-dev - 21/01/2023 - Pierre Van Glabeke
+* dc2.24
+
 v1.4.1 - 20/02/2018 - Pierre Van Glabeke
 * ajout info pour serveur microsoft
 

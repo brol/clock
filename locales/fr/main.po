@@ -1,41 +1,42 @@
 # Language: Français
-# Module: clock - 1.4.1
-# Date: 2018-02-20 13:34:16
-# Translated with translater 2018.02.14
+# Module: clock - 1.5-dev
+# Date: 2023-01-20 17:59:23
+# Author: Pierre Van Glabeke
+# Translated with translater 2022.12.26
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: clock 1.4.1\n"
+"Project-Id-Version: clock 1.5-dev\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-02-20T13:34:16+00:00\n"
-"Last-Translator: brol\n"
+"PO-Revision-Date: 2023-01-20T17:59:23+00:00\n"
+"Last-Translator: Pierre Van Glabeke\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: _widgets.php:31
+#: _widgets.php:23
 msgid "Clock"
 msgstr "Horloge"
 
-#: _widgets.php:33
+#: _widgets.php:25
 msgid "Display the date of a time zone"
 msgstr "Afficher la date d'un fuseau horaire"
 
-#: _widgets.php:36
+#: _widgets.php:28
 msgid "Local time in %s"
 msgstr "Heure de %s"
 
-#: _widgets.php:43
+#: _widgets.php:35
 msgid "Format (see <a href=\"%1$s\" %2$s>PHP strftime function</a>) (HMS display dynamically %%H:%%M:%%S)<br />(on Microsoft Windows servers, you have to use %%d instead of %%e):"
 msgstr "Format (voir la <a href=\"%1$s\" %2$s>fonction strftime de PHP</a>) (HMS affiche dynamiquement %%H:%%M:%%S)<br />(sur les serveurs Microsoft Windows, il faut utiliser %%d à la place %%e)&nbsp;:"
 
-#: _widgets.php:44
+#: _widgets.php:36
 msgid "http://www.php.net/manual/en/function.strftime.php"
 msgstr "http://www.php.net/manual/fr/function.strftime.php"
 
-#: _widgets.php:45
+#: _widgets.php:37
 msgid "Are you sure you want to leave this page?"
 msgstr "Êtes-vous sûr de vouloir quitter la page&nbsp;?"
 
